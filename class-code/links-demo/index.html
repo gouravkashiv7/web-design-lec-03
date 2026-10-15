@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        .spacer {
+            height: 1000px;
+            background: linear-gradient(to bottom, #f0f0f0, #ccc);
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+            color: #555;
+        }
+        .demo-section {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Links Demonstration</h1>
+    
+    <div class="demo-section">
+        <h2>1. Absolute Path (External Link)</h2>
+        <p>This links to another website entirely.</p>
+        <!-- The target="_blank" opens the link in a new tab -->
+        <a href="https://developer.mozilla.org/" target="_blank">Visit MDN Web Docs (Opens in new tab)</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>2. Email Link (mailto)</h2>
+        <p>This will try to open your computer's default email program.</p>
+        <a href="mailto:hello@sunrisecollege.edu?subject=Questions%20about%20the%20course">Email Us: hello@sunrisecollege.edu</a>
+    </div>
+
+    <div class="demo-section">
+        <h2>3. Same Page Link (Anchor / Jump Link)</h2>
+        <p>This links to another section on this exact same page.</p>
+        <a href="#bottom">Jump to the bottom of the page ↓</a>
+    </div>
+
+    <div class="spacer">
+        <p>(Scroll down or use the jump link above to skip this empty space)</p>
+        <!-- This large space forces the page to scroll, making the anchor link obvious -->
+    </div>
+
+    <h2 id="bottom">You reached the bottom!</h2>
+    <p>Notice how the URL in your browser now ends with <code>#bottom</code>.</p>
+    <a href="#top">↑ Back to top</a>
+
+</body>
+</html>

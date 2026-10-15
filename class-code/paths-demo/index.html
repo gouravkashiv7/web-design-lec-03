@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Paths Demo</title>
+</head>
+<body>
+    <h1>Demonstrating Image Paths</h1>
+    
+    <section>
+        <h2>1. Image in the Same Folder (Relative Path)</h2>
+        <p>This image is located in the same folder as this HTML file.</p>
+        <p>Code: <code>&lt;img src="local-image.png" alt="Local Logo"&gt;</code></p>
+        <img src="local-image.png" alt="Local Logo" width="200">
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>2. Image on the Desktop (Absolute Path)</h2>
+        <p>This image is located on your Mac's Desktop.</p>
+        <p>Code: <code>&lt;img src="/Users/codefinite/Desktop/desktop-image.png" alt="Desktop Logo"&gt;</code></p>
+        <img src="/Users/codefinite/Desktop/desktop-image.png" alt="Desktop Logo" width="200">
+        
+        <div style="background: #fff3cd; border: 1px solid #ffe69c; padding: 10px; margin-top: 15px; border-radius: 5px;">
+            <strong>💡 Why is this image broken?</strong><br>
+            If you see a broken image icon here, your browser is doing its job! Modern browsers (like Chrome) and tools (like Live Server) strictly block websites from reading files on your Desktop or other personal folders for security reasons. 
+            <br><br>
+            To see it actually load, you have to open this HTML file directly in <strong>Safari</strong> or Firefox by double-clicking it in Finder, which may ask for permission to access your Desktop folder.
+        </div>
+    </section>
+</body>
+</html>
